@@ -2,6 +2,7 @@ import React from 'react';
 import { ViewTab } from '../types';
 import { SERVICES_DATA, GEEKFORGE_CONTACT } from '../data/mockData';
 import { BudgetCalculator } from '../components/BudgetCalculator';
+import { QuoteEstimator } from '../components/QuoteEstimator';
 import {
   Smartphone,
   Globe,
@@ -150,6 +151,11 @@ export const ServicesView: React.FC<ServicesViewProps> = ({ setActiveTab }) => {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* INTERACTIVE QUOTE ESTIMATOR SLIDER */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <QuoteEstimator setActiveTab={setActiveTab} />
       </section>
 
       {/* INTERACTIVE BUDGET CALCULATOR WIDGET */}

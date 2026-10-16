@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ViewTab } from '../types';
 import { useTheme } from '../context/ThemeContext';
+import { useAdminAuth } from '../context/AdminAuthContext';
 import { GEEKFORGE_CONTACT } from '../data/mockData';
 import { GeekForgeLogo } from './GeekForgeLogo';
 import {
@@ -11,6 +12,8 @@ import {
   Calculator,
   MessageCircle,
   Sparkles,
+  ShieldCheck,
+  Lock,
 } from 'lucide-react';
 
 interface NavbarProps {
@@ -20,12 +23,13 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
   const { theme, toggleTheme } = useTheme();
+  const { isAdminLoggedIn, adminUser, openLoginModal } = useAdminAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems: { tab: ViewTab; label: string; badge?: string }[] = [
     { tab: 'home', label: 'Home' },
     { tab: 'services', label: 'Services' },
-    { tab: 'portfolio', label: 'Portfolio', badge: '11 Apps' },
+    { tab: 'portfolio', label: 'Portfolio', badge: 'Showcase' },
     { tab: 'wizard', label: 'Quote Generator', badge: 'Automated' },
     { tab: 'blog', label: 'Insights' },
     { tab: 'contact', label: 'Contact' },
@@ -39,20 +43,20 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
 
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/95 dark:bg-[#080d1a]/95 border-b border-slate-200/80 dark:border-slate-800/80 transition-colors duration-200">
-      {/* Top micro announcement bar with Neon Blue -> Neon Purple blend */}
-      <div className="bg-gradient-to-r from-[#0066FF] via-[#5B21B6] to-[#9333EA] text-white text-[11px] sm:text-xs font-semibold py-1.5 px-4 text-center flex items-center justify-center gap-2 shadow-inner">
+      {/* Top micro announcement bar with GeekForge Donut flame & cyan blend */}
+      <div className="bg-gradient-to-r from-[#FF5722] via-[#F97316] to-[#00A3FF] text-white text-[11px] sm:text-xs font-semibold py-1.5 px-4 text-center flex items-center justify-center gap-2 shadow-inner">
         <span className="flex items-center gap-1.5">
-          <Sparkles className="w-3.5 h-3.5 text-cyan-300 animate-pulse" />
+          <Sparkles className="w-3.5 h-3.5 text-[#FFD000] animate-pulse" />
           <span>
-            🚀 <strong>Limited Offer:</strong> Turnkey Android eCommerce App for ONLY{' '}
-            <strong className="underline decoration-cyan-300 underline-offset-2">R4,500!</strong>
+            🚀 <strong>Limited Offer:</strong> Turnkey Android Mobile App for ONLY{' '}
+            <strong className="underline decoration-[#FFD000] underline-offset-2">R4,500!</strong>
           </span>
         </span>
         <span className="hidden md:inline">• Google Play Store • PayFast & Ozow • 100% Code Ownership</span>
         <button
           type="button"
           onClick={() => handleNavClick('portfolio')}
-          className="underline hover:text-cyan-200 ml-1 font-bold cursor-pointer transition-colors"
+          className="underline hover:text-amber-200 ml-1 font-bold cursor-pointer transition-colors"
         >
           View Apps →
         </button>
@@ -81,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
                 onClick={() => handleNavClick(item.tab)}
                 className={`relative px-3 py-1.5 rounded-xl text-sm font-medium transition-all cursor-pointer flex items-center gap-1.5 ${
                   isActive
-                    ? 'text-blue-600 dark:text-cyan-300 bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 font-semibold shadow-xs'
+                    ? 'text-[#FF5722] dark:text-[#FF8C00] bg-orange-50 dark:bg-orange-950/30 border border-orange-200 dark:border-orange-500/30 font-semibold shadow-xs'
                     : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
                 }`}
               >
@@ -90,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
                   <span
                     className={`text-[9.5px] px-1.5 py-0.2 rounded-full font-bold uppercase tracking-wider ${
                       isActive
-                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
+                        ? 'bg-gradient-to-r from-[#FF5722] to-[#FF9100] text-white'
                         : 'bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400'
                     }`}
                   >
@@ -109,13 +113,13 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             id="theme-toggle-btn"
             type="button"
             onClick={toggleTheme}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-100/90 dark:bg-slate-900/90 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:border-blue-500/50 dark:hover:border-purple-500/50 transition-all cursor-pointer shadow-xs group"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-100/90 dark:bg-slate-900/90 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:border-orange-500/50 transition-all cursor-pointer shadow-xs group"
             title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
             aria-label="Switch light and dark mode"
           >
             <span
               className={`flex items-center gap-1 transition-colors ${
-                theme === 'light' ? 'text-amber-500 font-bold' : 'text-slate-400 group-hover:text-slate-500'
+                theme === 'light' ? 'text-[#FFB800] font-bold' : 'text-slate-400 group-hover:text-slate-500'
               }`}
             >
               <Sun className="w-3.5 h-3.5" />
@@ -124,7 +128,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             <span className="text-slate-300 dark:text-slate-700">/</span>
             <span
               className={`flex items-center gap-1 transition-colors ${
-                theme === 'dark' ? 'text-purple-400 font-bold' : 'text-slate-400 group-hover:text-slate-500'
+                theme === 'dark' ? 'text-[#FF8C00] font-bold' : 'text-slate-400 group-hover:text-slate-500'
               }`}
             >
               <Moon className="w-3.5 h-3.5" />
@@ -132,12 +136,35 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             </span>
           </button>
 
-          {/* Quick Quote Wizard CTA with Neon Blue / Purple Gradient */}
+          {/* Admin Portal Button */}
+          {isAdminLoggedIn ? (
+            <button
+              type="button"
+              onClick={() => handleNavClick('portfolio')}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold hover:bg-emerald-500/20 transition-all cursor-pointer"
+              title={`Logged in as ${adminUser?.email}`}
+            >
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
+              <span className="hidden sm:inline">Admin Mode</span>
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={openLoginModal}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-800 bg-slate-100/90 dark:bg-slate-900/90 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-[#FF5722] dark:hover:text-[#FF8C00] hover:border-orange-500/40 transition-all cursor-pointer"
+              title="Admin Login"
+            >
+              <Lock className="w-3.5 h-3.5 text-slate-400" />
+              <span className="hidden sm:inline text-[11px]">Admin</span>
+            </button>
+          )}
+
+          {/* Quick Quote Wizard CTA with GeekForge Flame Orange Gradient */}
           <button
             id="navbar-quote-cta-btn"
             type="button"
             onClick={() => handleNavClick('wizard')}
-            className="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-[#0066FF] via-[#4F46E5] to-[#9333EA] hover:from-[#0052cc] hover:to-[#7e22ce] text-white text-xs sm:text-sm font-bold shadow-md shadow-blue-500/20 hover:shadow-purple-500/30 transition-all cursor-pointer"
+            className="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-[#FF5722] via-[#F97316] to-[#FF9100] hover:from-[#E64A19] hover:to-[#FF8C00] text-white text-xs sm:text-sm font-bold shadow-md shadow-orange-500/25 transition-all cursor-pointer"
           >
             <Calculator className="w-3.5 h-3.5" />
             <span>Instant Quote</span>

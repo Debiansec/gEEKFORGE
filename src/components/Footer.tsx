@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ViewTab } from '../types';
 import { GEEKFORGE_CONTACT } from '../data/mockData';
 import { GeekForgeLogo } from './GeekForgeLogo';
@@ -11,6 +11,9 @@ import {
   ShieldCheck,
   ArrowRight,
   MessageCircle,
+  CheckCircle2,
+  AlertCircle,
+  Send,
 } from 'lucide-react';
 
 interface FooterProps {
@@ -18,9 +21,36 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [newsletterStatus, setNewsletterStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [newsletterError, setNewsletterError] = useState('');
+
   const handleNav = (tab: ViewTab) => {
     setActiveTab(tab);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setNewsletterError('');
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!newsletterEmail.trim()) {
+      setNewsletterError('Please provide your email address.');
+      setNewsletterStatus('error');
+      return;
+    }
+    if (!emailRegex.test(newsletterEmail.trim())) {
+      setNewsletterError('Please provide a valid email address.');
+      setNewsletterStatus('error');
+      return;
+    }
+
+    setNewsletterStatus('loading');
+    setTimeout(() => {
+      setNewsletterStatus('success');
+      setNewsletterEmail('');
+    }, 500);
   };
 
   return (
@@ -59,6 +89,63 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
               <MessageCircle className="w-4 h-4 text-cyan-400" />
               <span>WhatsApp Us Today</span>
             </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Newsletter Signup Banner */}
+      <div className="border-b border-slate-800 bg-slate-900/60 py-8 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-1">
+              <Mail className="w-4 h-4" />
+              <span>South Africa Tech & eCommerce Newsletter</span>
+            </div>
+            <h4 className="text-lg sm:text-xl font-bold text-white">
+              Stay in the loop with web & mobile development updates
+            </h4>
+            <p className="text-xs text-slate-400 mt-1">
+              Practical guides on PayFast integration, Google Play releases, and scaling online sales in South Africa.
+            </p>
+          </div>
+
+          <div className="w-full lg:w-auto min-w-[320px] sm:min-w-[420px]">
+            {newsletterStatus === 'success' ? (
+              <div className="p-3.5 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm font-semibold flex items-center justify-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>Thank you! You're subscribed to GeekForge updates.</span>
+              </div>
+            ) : (
+              <form onSubmit={handleNewsletterSubmit} className="space-y-1.5">
+                <div className="flex gap-2">
+                  <input
+                    id="footer-newsletter-email"
+                    type="email"
+                    value={newsletterEmail}
+                    onChange={(e) => {
+                      setNewsletterEmail(e.target.value);
+                      if (newsletterError) setNewsletterError('');
+                    }}
+                    placeholder="Enter your email address"
+                    className="flex-1 px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  <button
+                    id="footer-newsletter-btn"
+                    type="submit"
+                    disabled={newsletterStatus === 'loading'}
+                    className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#0066FF] to-[#9333EA] hover:from-[#0052cc] hover:to-[#7e22ce] text-white font-bold text-xs shrink-0 transition-all cursor-pointer disabled:opacity-50"
+                  >
+                    {newsletterStatus === 'loading' ? 'Joining...' : 'Subscribe'}
+                  </button>
+                </div>
+                {newsletterError && (
+                  <div className="flex items-center gap-1.5 text-rose-400 text-xs">
+                    <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                    <span>{newsletterError}</span>
+                  </div>
+                )}
+              </form>
+            )}
           </div>
         </div>
       </div>

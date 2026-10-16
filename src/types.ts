@@ -134,3 +134,28 @@ export interface QuoteState {
   businessName: string;
   notes: string;
 }
+
+export interface PortfolioMediaItem {
+  id: string;
+  title: string;
+  client: string;
+  description: string;
+  portfolio_category: "Android Mobile Apps & eCommerce Showcase";
+  media_url: string;
+  media_type: "image" | "video";
+  media_original_name: string;
+  media_size: number;
+  uploaded_by: "authenticated_admin";
+  uploaded_by_email: string;
+  published: boolean;
+  featured: boolean;
+  display_order: number;
+  created_at: string;
+  updated_at: string;
+  platform: string;
+  year: string;
+  accent_color: string;
+  features: string[];
+  metrics: { label: string; value: string }[];
+}
+

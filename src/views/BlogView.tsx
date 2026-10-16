@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ViewTab, BlogPost } from '../types';
 import { BLOG_POSTS } from '../data/mockData';
 import {
@@ -9,6 +9,10 @@ import {
   User,
   ArrowRight,
   X,
+  Mail,
+  CheckCircle2,
+  AlertCircle,
+  Sparkles,
 } from 'lucide-react';
 
 interface BlogViewProps {
@@ -19,6 +23,43 @@ export const BlogView: React.FC<BlogViewProps> = ({ setActiveTab }) => {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [activeArticle, setActiveArticle] = useState<BlogPost | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  // Newsletter signup form states
+  const [newsletterEmail, setNewsletterEmail] = useState<string>('');
+  const [newsletterStatus, setNewsletterStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [newsletterError, setNewsletterError] = useState<string>('');
+
+  // Perceived loading skeleton
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 400);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setNewsletterError('');
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!newsletterEmail.trim()) {
+      setNewsletterError('Please enter your email address.');
+      setNewsletterStatus('error');
+      return;
+    }
+    if (!emailRegex.test(newsletterEmail.trim())) {
+      setNewsletterError('Please enter a valid email address.');
+      setNewsletterStatus('error');
+      return;
+    }
+
+    setNewsletterStatus('loading');
+    setTimeout(() => {
+      setNewsletterStatus('success');
+      setNewsletterEmail('');
+    }, 600);
+  };
 
   const getPostImage = (post: BlogPost) => {
     if (post.coverImage) return post.coverImage;
@@ -110,9 +151,45 @@ export const BlogView: React.FC<BlogViewProps> = ({ setActiveTab }) => {
         </div>
       </section>
 
-      {/* Blog Posts Grid */}
+      {/* Blog Posts Grid with Skeleton Loading State */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {filteredPosts.length === 0 ? (
+        {isLoading ? (
+          // Skeleton Loading Grid
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[...Array(6)].map((_, i) => (
+              <div
+                key={i}
+                className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm animate-pulse flex flex-col justify-between"
+              >
+                <div>
+                  <div className="h-48 bg-slate-200 dark:bg-slate-800 w-full" />
+                  <div className="p-6 space-y-4">
+                    <div className="flex gap-2">
+                      <div className="h-3 bg-slate-200 dark:bg-slate-800 rounded-md w-20" />
+                      <div className="h-3 bg-slate-200 dark:bg-slate-800 rounded-md w-16" />
+                    </div>
+                    <div className="h-6 bg-slate-200 dark:bg-slate-800 rounded-md w-5/6" />
+                    <div className="space-y-2">
+                      <div className="h-3 bg-slate-200 dark:bg-slate-800 rounded-md w-full" />
+                      <div className="h-3 bg-slate-200 dark:bg-slate-800 rounded-md w-4/5" />
+                    </div>
+                    <div className="flex gap-2 pt-2">
+                      <div className="h-5 bg-slate-200 dark:bg-slate-800 rounded-md w-14" />
+                      <div className="h-5 bg-slate-200 dark:bg-slate-800 rounded-md w-16" />
+                    </div>
+                  </div>
+                </div>
+                <div className="p-6 pt-0 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center mt-4">
+                  <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 rounded-full bg-slate-200 dark:bg-slate-800" />
+                    <div className="h-3 bg-slate-200 dark:bg-slate-800 rounded-md w-20" />
+                  </div>
+                  <div className="h-3 bg-slate-200 dark:bg-slate-800 rounded-md w-20" />
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : filteredPosts.length === 0 ? (
           <div className="text-center py-16 bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800">
             <BookOpen className="w-10 h-10 text-slate-400 mx-auto mb-3" />
             <h3 className="text-lg font-bold text-slate-900 dark:text-white">No articles found</h3>
@@ -217,6 +294,76 @@ export const BlogView: React.FC<BlogViewProps> = ({ setActiveTab }) => {
             ))}
           </div>
         )}
+      </section>
+
+      {/* LEAD CAPTURE NEWSLETTER SECTION */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-br from-slate-950 via-[#0a1024] to-[#1a0f30] text-white rounded-3xl p-6 sm:p-10 border border-blue-500/30 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-purple-500/15 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="max-w-2xl mx-auto text-center space-y-4 relative z-10">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 text-cyan-300 text-xs font-bold uppercase tracking-wider">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>South Africa Tech & eCommerce Dispatch</span>
+            </div>
+
+            <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-white">
+              Stay Ahead with eCommerce & App Strategies
+            </h3>
+
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Get notified when we publish actionable developer breakdowns, PayFast integration walkthroughs, and Google Play Store optimization guides. No spam, ever.
+            </p>
+
+            {newsletterStatus === 'success' ? (
+              <div className="p-4 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 flex items-center justify-center gap-3 animate-fade-in">
+                <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+                <span className="text-xs sm:text-sm font-semibold">
+                  You're in! Thank you for subscribing. We've sent a welcome email with our South Africa eCommerce Launch Checklist.
+                </span>
+              </div>
+            ) : (
+              <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto space-y-2 pt-2">
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <div className="relative flex-1">
+                    <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                    <input
+                      id="blog-newsletter-email"
+                      type="email"
+                      value={newsletterEmail}
+                      onChange={(e) => {
+                        setNewsletterEmail(e.target.value);
+                        if (newsletterError) setNewsletterError('');
+                      }}
+                      placeholder="Enter your email (e.g. you@company.co.za)"
+                      className="w-full pl-10 pr-3 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all placeholder:text-slate-500"
+                    />
+                  </div>
+
+                  <button
+                    id="blog-newsletter-submit-btn"
+                    type="submit"
+                    disabled={newsletterStatus === 'loading'}
+                    className="px-5 py-3 rounded-xl bg-gradient-to-r from-[#0066FF] to-[#9333EA] hover:from-[#0052cc] hover:to-[#7e22ce] text-white font-bold text-xs sm:text-sm shrink-0 transition-all shadow-md shadow-blue-500/20 disabled:opacity-50 cursor-pointer"
+                  >
+                    {newsletterStatus === 'loading' ? 'Subscribing...' : 'Subscribe Free'}
+                  </button>
+                </div>
+
+                {newsletterError && (
+                  <div className="flex items-center gap-1.5 text-rose-400 text-xs text-left pt-1">
+                    <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                    <span>{newsletterError}</span>
+                  </div>
+                )}
+
+                <p className="text-[11px] text-slate-400 text-center pt-1">
+                  🔒 Zero spam. Unsubscribe at any time with one click.
+                </p>
+              </form>
+            )}
+          </div>
+        </div>
       </section>
 
       {/* Article Reader Modal */}

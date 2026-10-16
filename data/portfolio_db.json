@@ -1,0 +1,674 @@
+[
+  {
+    "id": "port-fightclub-near-me",
+    "title": "FightClub Near Me - Combat Sports Radar & Sparring Matchmaking",
+    "client": "FightClub Near Me (Sandton, Johannesburg)",
+    "description": "Mobile matchmaking and discovery platform for combat athletes, MMA gyms, and sparring partners across Gauteng. Features an interactive 50km radar discovery radius, verified fighter profiles with weight classes, discipline tags (MMA, BJJ, Muay Thai, Boxing), gym class schedules, and direct sparring bookings.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/fightclub.svg",
+    "media_type": "image",
+    "media_original_name": "FightClub_Near_Me_Showcase.png",
+    "media_size": 2450000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": true,
+    "display_order": 1,
+    "created_at": "2026-10-10T09:00:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android (Google Play Store)",
+    "year": "2026",
+    "accent_color": "#EF4444",
+    "features": [
+      "50km Geolocation Radar Map Discovery (Sandton, Rosebank, Melrose)",
+      "Verified Fighter Profiles with Weight Classes, Record & Availability",
+      "Fight Club & Gym Directory (Iron Camp MMA) with Direct Dial & Bookings",
+      "Sparring & Matchmaking Direct Chat with Instant Push Alerts",
+      "Full Google Play Store Approval & Play Console Publishing"
+    ],
+    "metrics": [
+      {
+        "label": "Radar Discovery",
+        "value": "50km Radius"
+      },
+      {
+        "label": "Verified Athletes",
+        "value": "100% ID Checked"
+      },
+      {
+        "label": "Turnaround",
+        "value": "7 Days"
+      }
+    ]
+  },
+  {
+    "id": "port-fantasy-fight",
+    "title": "Fantasy Fight - Legendary Boxing Prediction & Simulation Engine",
+    "client": "Fantasy Fight Arena",
+    "description": "Interactive fantasy boxing simulator allowing combat sports fans to stage dream historical showdowns (Muhammad Ali Prime vs Mike Tyson Prime, Gerrie Coetzee vs George Foreman). Features real-time round-by-round simulation with dynamic stamina, power, defense, and mental stat gauges, accompanied by live AI blow-by-blow text commentary.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/fantasyfight.svg",
+    "media_type": "image",
+    "media_original_name": "Fantasy_Fight_Showcase.png",
+    "media_size": 2820000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": true,
+    "display_order": 2,
+    "created_at": "2026-10-11T10:30:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android (Google Play Store)",
+    "year": "2026",
+    "accent_color": "#F59E0B",
+    "features": [
+      "Historic Matchup Engine: Ali Prime (1964-67) vs Tyson Prime (1985-88)",
+      "Customizable Fight Conditions: 12 Rounds, Vegas Venue & Fight Styles",
+      "Real-Time Dynamic Simulation: Stamina, Power, Defense & Mental Gauges",
+      "Live AI Blow-By-Blow Commentary & Punch Outcome Algorithms",
+      "Interactive Round Selector (1 to 12) & Fight History Archiving"
+    ],
+    "metrics": [
+      {
+        "label": "Simulations Run",
+        "value": "12-Round Engine"
+      },
+      {
+        "label": "Fighter Attributes",
+        "value": "4 Core Gauges"
+      },
+      {
+        "label": "Publishing Status",
+        "value": "Play Store Live"
+      }
+    ]
+  },
+  {
+    "id": "port-sa-business-os",
+    "title": "SA Business OS - SME Management, AI Quotes & Invoicing",
+    "client": "SA Business OS (Gauteng, South Africa)",
+    "description": "Complete South African SME operating system engineered to streamline quotes, invoices, payments, jobs, and customer relationships. Highlights an AI Natural Language Quote Builder allowing contractors and service businesses to draft quotes in under 60 seconds, paired with instant PayFast & Ozow EFT payment tracking and WhatsApp synchronization.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/sabusinessos.svg",
+    "media_type": "image",
+    "media_original_name": "SA_Business_OS_Showcase.png",
+    "media_size": 3100000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": true,
+    "display_order": 3,
+    "created_at": "2026-10-12T08:15:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android & Cloud Web Sync",
+    "year": "2026",
+    "accent_color": "#2563EB",
+    "features": [
+      "AI Natural Language Quote Builder: Prompt to Itemized Quote in Seconds",
+      "Real-Time Executive Dashboard: Sales, Outstanding Debt, Active Jobs",
+      "Instant PayFast & Ozow Payment Gateway Reconciliation with Automated Receipts",
+      "Overdue Invoicing Alert System & 1-Click WhatsApp Payment Reminders",
+      "Full Customer & Job Tracker with Downloadable Tax-Compliant PDF Invoices"
+    ],
+    "metrics": [
+      {
+        "label": "AI Quote Speed",
+        "value": "< 60 Seconds"
+      },
+      {
+        "label": "Payment Gateways",
+        "value": "PayFast & Ozow"
+      },
+      {
+        "label": "Client Adoption",
+        "value": "Active SA SMEs"
+      }
+    ]
+  },
+  {
+    "id": "port-your-brand-ai",
+    "title": "Your Brand AI - Multi-Vendor eCommerce & Dropshipping Platform",
+    "client": "Your Brand Dropship SA",
+    "description": "High-converting mobile eCommerce and dropshipping ecosystem connected with AliExpress, Amazon, CJ Dropshipping, and Takealot. Features an integrated AI Business Assistant providing inventory forecasts and conversion tips, coupled with live order synchronization, automated shipping tracking, and 1-click product catalog imports.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/yourbrand.svg",
+    "media_type": "image",
+    "media_original_name": "Your_Brand_AI_Dropship.png",
+    "media_size": 2950000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": false,
+    "display_order": 4,
+    "created_at": "2026-10-12T14:20:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#8B5CF6",
+    "features": [
+      "Multi-Channel Sales Integration: AliExpress, Amazon, CJ Dropship, Takealot",
+      "Built-in AI Business Assistant for Marketing Copy & Inventory Optimization",
+      "Live Revenue & Conversion Dashboard (R128k+ Gross Monthly Sales Tracked)",
+      "1-Click Winning Product Catalog Importer with Automated Markups",
+      "Express 3-7 Day South African Shipping Tracker & Doorstep Delivery Updates"
+    ],
+    "metrics": [
+      {
+        "label": "Channels Synced",
+        "value": "4 Marketplaces"
+      },
+      {
+        "label": "Monthly Volume",
+        "value": "R128k+ GMV"
+      },
+      {
+        "label": "Checkout Speed",
+        "value": "Instant EFT"
+      }
+    ]
+  },
+  {
+    "id": "port-stokvel-savings",
+    "title": "Stokvel Community Savings - Digital Pool & Rotating Payouts",
+    "client": "Stokvel SA Community",
+    "description": "A tailored digital governance and group finance application for South African burial societies, investment clubs, and family savings pools. Brings 100% transparent member payment auditing, rotating payout countdowns, in-app voting on resolutions, and bank statement archiving to eradicate accounting disputes.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/stokvel.svg",
+    "media_type": "image",
+    "media_original_name": "Stokvel_Community_Savings.png",
+    "media_size": 3200000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": false,
+    "display_order": 5,
+    "created_at": "2026-10-13T11:00:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#059669",
+    "features": [
+      "Automated Monthly Member Contribution Ledger with Real-Time Paid Badges",
+      "Rotating Payout Schedule Calculator with Multi-Signature Banking Approvals",
+      "Transparent Group Savings Goal Meters (R100,000+ Targets Supported)",
+      "Governance Module: Resolution Voting, Meeting Attendance & Document Vault",
+      "Heritage African Design Language with High-Contrast Legibility"
+    ],
+    "metrics": [
+      {
+        "label": "Auditing",
+        "value": "100% Transparent"
+      },
+      {
+        "label": "Payout Security",
+        "value": "Multi-Sig Auth"
+      },
+      {
+        "label": "Turnaround",
+        "value": "5-7 Days"
+      }
+    ]
+  },
+  {
+    "id": "port-baby-newborn",
+    "title": "Baby Newborn Direct - Curated Infant Gear & 3-in-1 Travel Systems",
+    "client": "Baby Newborn Direct South Africa",
+    "description": "A polished mobile storefront designed for expectant and new South African parents. Features baby gear bundles, luxury 3-in-1 stroller configurations, baby food subscription ordering (Nestl\u00e9 Nan Optipro, Gerber), free delivery incentives over R499, and integrated direct WhatsApp maternity support.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/babynewborn.svg",
+    "media_type": "image",
+    "media_original_name": "Baby_Newborn_Direct.png",
+    "media_size": 2750000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": false,
+    "display_order": 6,
+    "created_at": "2026-10-13T15:30:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App (Play Store)",
+    "year": "2026",
+    "accent_color": "#F43F5E",
+    "features": [
+      "Luxury 3-in-1 Stroller & Car Seat Configurator with Multi-Angle Previews",
+      "Quick-Reorder Essentials Catalog for Baby Formulas, Cereals & Teethers",
+      "Free Nationwide Delivery Thresholds (Orders Over R499 Automatically Discounted)",
+      "Secure Multi-Option Checkout: PayFast, Ozow, Cards & Payflex Split Payments",
+      "Direct WhatsApp Consultation Button for First-Time Parents"
+    ],
+    "metrics": [
+      {
+        "label": "Free Delivery",
+        "value": "Over R499"
+      },
+      {
+        "label": "Play Store",
+        "value": "Verified Live"
+      },
+      {
+        "label": "Repeat Orders",
+        "value": "1-Tap Formula"
+      }
+    ]
+  },
+  {
+    "id": "port-fashion-express",
+    "title": "Fashion Express (FE) - Sneaker Drops & Limited Kicks Mobile App",
+    "client": "Fashion Express Kicks",
+    "description": "Cyberpunk-infused sneakerhead mobile marketplace offering verified drops from Nike, Adidas, Puma, and New Balance. Implements drop countdown notifications, UK shoe size availability matrices (UK 6 to 11), high-speed 2-step checkout with PayFast & Ozow, and tamper-proof courier tracking across South Africa.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/fashionexpress.svg",
+    "media_type": "image",
+    "media_original_name": "Fashion_Express_Sneakers.png",
+    "media_size": 3400000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": true,
+    "display_order": 7,
+    "created_at": "2026-10-14T09:45:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#A855F7",
+    "features": [
+      "Real-Time Sneaker Drop Push Notifications & Launch Countdowns",
+      "Interactive UK Shoe Size Selector (6-11) with Real-Time Stock Availability",
+      "2-Step Express Checkout with PayFast, Ozow Instant EFT & Card Encryption",
+      "100% Genuine Authenticity Guarantee Badging & Live Courier Tracking",
+      "Wishlist Synchronization & Social Sharing to Instagram / TikTok"
+    ],
+    "metrics": [
+      {
+        "label": "Checkout Speed",
+        "value": "< 30 Seconds"
+      },
+      {
+        "label": "Authenticity",
+        "value": "100% Guaranteed"
+      },
+      {
+        "label": "Top Brands",
+        "value": "Nike, Adidas, Puma"
+      }
+    ]
+  },
+  {
+    "id": "port-mobiledirect",
+    "name": "MobileDirect - Phone Accessories & Certified Repair Scheduling",
+    "client": "MobileDirect SA",
+    "description": "A high-energy neon mobile commerce and certified technician booking app. Enables customers to purchase MagSafe rugged cases, fast chargers, and audio gear, or schedule professional screen and battery repairs for iPhone, Samsung Galaxy, and Huawei devices with a 6-month warranty.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/mobiledirect.svg",
+    "media_type": "image",
+    "media_original_name": "MobileDirect_App.png",
+    "media_size": 2600000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": false,
+    "display_order": 8,
+    "created_at": "2026-10-14T13:10:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#84CC16",
+    "features": [
+      "Dual-Channel Commerce: Retail Accessories + Repair Service Booking",
+      "Interactive Device Repair Selector: Model, OLED vs LCD Screen Options",
+      "6-Month Workmanship Warranty Card & Digital Service Receipt Stored in App",
+      "Same-Day Accessory Dispatch with South Africa Wide Courier Integration",
+      "Customer Loyalty Points & WhatsApp Repair Progress Tracking"
+    ],
+    "metrics": [
+      {
+        "label": "Warranty",
+        "value": "6 Months Backed"
+      },
+      {
+        "label": "Repair Turnaround",
+        "value": "Same-Day Fast"
+      },
+      {
+        "label": "App Special",
+        "value": "R4,500 Package"
+      }
+    ]
+  },
+  {
+    "id": "port-dropship-sa",
+    "title": "Dropship SA - Sourcing, Automated Fulfillment & Viral Gadgets",
+    "client": "Dropship South Africa",
+    "description": "Dedicated mobile dropshipping ecosystem empowering over 10,000 South African online retailers to source viral consumer tech, list items with custom profit margins, and have orders dispatched directly to customers with zero inventory holding.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/dropship.svg",
+    "media_type": "image",
+    "media_original_name": "Dropship_SA_App.png",
+    "media_size": 2900000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": false,
+    "display_order": 9,
+    "created_at": "2026-10-14T16:00:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#EF4444",
+    "features": [
+      "Automated Winning Product Catalog with Live Wholesale Pricing",
+      "Automated Order Routing & Doorstep Tracking Updates via SMS & Email",
+      "PayFast & Ozow Instant EFT Integration with Direct Margin Payouts",
+      "Social Video Commerce Assets Ready for TikTok & Instagram Ads",
+      "10,000+ Active Entrepreneurs Supported Nationwide"
+    ],
+    "metrics": [
+      {
+        "label": "Active Merchants",
+        "value": "10,000+"
+      },
+      {
+        "label": "Automation",
+        "value": "Auto-Fulfill"
+      },
+      {
+        "label": "Payment Speed",
+        "value": "Instant EFT"
+      }
+    ]
+  },
+  {
+    "id": "port-beautydot",
+    "title": "BeautyDot - Cosmetics, Hair Extensions & BNPL 3-Split Shopping",
+    "client": "BeautyDot Cosmetics",
+    "description": "Luxury cosmetics and human hair extensions mobile store. Features an interactive Brazilian hair bundle configurator (lengths 12\" to 20\" and textures like Body Wave, Straight, Curly), Huda Beauty eyeshadow palettes, and South African BNPL split-payment integrations via Payflex & PayJustNow.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/beautydot.svg",
+    "media_type": "image",
+    "media_original_name": "BeautyDot_Cosmetics.png",
+    "media_size": 3150000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": false,
+    "display_order": 10,
+    "created_at": "2026-10-15T08:30:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#EC4899",
+    "features": [
+      "Interactive Brazilian Hair Bundle Selector: Length (12\"-20\") & Textures",
+      "South African Buy-Now-Pay-Later (BNPL): Payflex 3x Interest-Free Installments",
+      "Foundation Shade Swatch Zoom & Cosmetic Review Galleries",
+      "Free Delivery Across South Africa for Orders Over R999",
+      "Flash Sale Coupon Generator (20% Off Limited Beauty Drops)"
+    ],
+    "metrics": [
+      {
+        "label": "BNPL Providers",
+        "value": "Payflex & JustNow"
+      },
+      {
+        "label": "Free Shipping",
+        "value": "Over R999"
+      },
+      {
+        "label": "Turnaround",
+        "value": "5-7 Days"
+      }
+    ]
+  },
+  {
+    "id": "port-butcherboys",
+    "title": "ButcherBoys - Cold-Chain Fresh Meat & Bulk Braai Packs",
+    "client": "ButcherBoys South Africa",
+    "description": "Mobile ordering app for premier South African butchery delivering A-grade grain-fed beef, lamb, pork, boerewors, and artisanal biltong. Backed by temperature-controlled refrigerated logistics and a 100% cold-chain guarantee, with bulk carcass specials and braai hamper customization.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/butcherboys.svg",
+    "media_type": "image",
+    "media_original_name": "ButcherBoys_App.png",
+    "media_size": 3350000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": true,
+    "display_order": 11,
+    "created_at": "2026-10-15T10:15:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#DC2626",
+    "features": [
+      "Bulk Braai & Full Carcass Specials Configurator (Lamb, Beef, Pork)",
+      "Vacuum-Sealed Portion Customizer: Grain-Fed Ribeye, Sirloin, T-Bone 500g",
+      "100% Temperature-Controlled Cold Chain Refrigerated Delivery Tracking",
+      "Payflex Split Payments for Bulk Family Monthly Meat Hampers",
+      "Same-Day Fresh Cuts Guarantee Prepared by Master Butchers"
+    ],
+    "metrics": [
+      {
+        "label": "Cold Chain",
+        "value": "100% Guaranteed"
+      },
+      {
+        "label": "Steak Cuts",
+        "value": "A-Grade Grain Fed"
+      },
+      {
+        "label": "Delivery",
+        "value": "Refrigerated Vans"
+      }
+    ]
+  },
+  {
+    "id": "port-shopza",
+    "title": "Shopza - High-Speed Multi-Category Everyday Retail Store",
+    "client": "Shopza Multi-Category Retail",
+    "description": "Ultra-clean, modern mobile shopping application featuring electronics, fashion, home essentials, and beauty. Built for lightning-fast sub-second search, summer promotion countdowns, and streamlined one-tap cart additions with comprehensive PayFast and Ozow payment coverage.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/shopza.svg",
+    "media_type": "image",
+    "media_original_name": "Shopza_Retail.png",
+    "media_size": 2500000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": false,
+    "display_order": 12,
+    "created_at": "2026-10-15T12:45:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#2563EB",
+    "features": [
+      "Multi-Category Catalog: Electronics, Streetwear, Home Essentials & Audio",
+      "Real-Time Discount Banners (-30% Summer Sale Engine with Coupon Codes)",
+      "Interactive Product Options: Color Chips, Audio Specs, Size Pickers",
+      "1-Tap Add to Cart with Express Instant EFT & Card Checkout",
+      "Push Notifications for Deal Alerts and Delivery Tracking"
+    ],
+    "metrics": [
+      {
+        "label": "Search Speed",
+        "value": "< 0.3s Instant"
+      },
+      {
+        "label": "Category Breadth",
+        "value": "Multi-Department"
+      },
+      {
+        "label": "Play Store",
+        "value": "Ready & Approved"
+      }
+    ]
+  },
+  {
+    "id": "port-cake-treats",
+    "title": "Cake & Treats - Artisanal Bakery & Custom Celebration Cake Builder",
+    "client": "Cake & Treats Bakery",
+    "description": "Specialized bakery and celebration cake delivery app across South Africa. Features an interactive cake customizer where clients select cake size (1kg to 5kg), sponges (Chocolate Fudge, Red Velvet, Carrot Cake), icing decorations, and custom piped inscriptions with guaranteed fragile boxed delivery.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/caketreats.svg",
+    "media_type": "image",
+    "media_original_name": "Cake_and_Treats_App.png",
+    "media_size": 3100000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": false,
+    "display_order": 13,
+    "created_at": "2026-10-15T15:20:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#DB2777",
+    "features": [
+      "Interactive Cake Customizer: Flavours, Multi-Tier Sizes & Custom Piping",
+      "Fresh Daily Baked Goods: Milk Tarts, Cupcakes, Desserts & Cookies",
+      "Promotional Discount Code Engine (SWEET10 for 10% Off First Orders)",
+      "Fragile Goods Temperature-Controlled Bakery Box Logistics",
+      "Wedding & Event Cake Consultation Scheduler with WhatsApp Integration"
+    ],
+    "metrics": [
+      {
+        "label": "Custom Cakes",
+        "value": "1kg to 5kg Tiers"
+      },
+      {
+        "label": "Delivery",
+        "value": "Chilled Boxed"
+      },
+      {
+        "label": "Code Special",
+        "value": "SWEET10 Active"
+      }
+    ]
+  },
+  {
+    "id": "port-securitydirect",
+    "title": "SecurityDirect - Surveillance Tech & Certified CCTV Installations",
+    "client": "SecurityDirect South Africa",
+    "description": "Commercial and residential security equipment store integrated with technician dispatch. Sells Hikvision 4MP PTZ IP cameras, IDS smart alarm kits, and wireless entry controls, while providing in-app booking for certified CCTV installation packages with a full workmanship warranty.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/securitydirect.svg",
+    "media_type": "image",
+    "media_original_name": "SecurityDirect_Showcase.png",
+    "media_size": 3250000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": false,
+    "display_order": 14,
+    "created_at": "2026-10-16T08:10:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#EF4444",
+    "features": [
+      "Certified CCTV Installation Booking Engine (4-Camera Packages from R2,499)",
+      "Hikvision 4MP PTZ IP Camera & IDS Alarm Sourcing with Wholesale Rates",
+      "Full Warranty on Workmanship & 24/7 Priority Emergency Support",
+      "Interactive Camera Spec Comparison: Night Vision, Resolution, Weatherproof",
+      "Direct WhatsApp Technician Chat for Residential & Business Audits"
+    ],
+    "metrics": [
+      {
+        "label": "Installation Team",
+        "value": "Certified Technicians"
+      },
+      {
+        "label": "Warranty",
+        "value": "Full Workmanship"
+      },
+      {
+        "label": "Security Level",
+        "value": "Commercial Grade"
+      }
+    ]
+  },
+  {
+    "id": "port-solardirect",
+    "title": "SolarDirect - Hybrid Solar Systems & Load Shedding Relief Solutions",
+    "client": "SolarDirect South Africa",
+    "description": "South Africa load shedding relief platform selling 5kW hybrid solar packages, 550W mono solar panels, hybrid inverters, and solar geysers. Provides an in-app installation booking engine featuring free site assessments, COC electrical compliance, and 5-year hardware warranties.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/solardirect.svg",
+    "media_type": "image",
+    "media_original_name": "SolarDirect_Power.png",
+    "media_size": 3450000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": true,
+    "display_order": 15,
+    "created_at": "2026-10-16T09:30:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#F59E0B",
+    "features": [
+      "5kW Complete Hybrid Solar System Configurator for Home & Office",
+      "Certified Electrician Installation Booking Service with Free Site Assessment",
+      "5-Year Hardware Warranty & 2-Year Workmanship COC Certificate Compliance",
+      "High-Efficiency Mono Panels, 48V Lithium-Ion Battery Storage & Inverters",
+      "Real-Time Load Shedding Stage Alerts & Solar Generation Estimator"
+    ],
+    "metrics": [
+      {
+        "label": "Hardware Warranty",
+        "value": "5 Years Backed"
+      },
+      {
+        "label": "Site Assessment",
+        "value": "Free & Certified"
+      },
+      {
+        "label": "Energy Relief",
+        "value": "100% Load Shedding"
+      }
+    ]
+  },
+  {
+    "id": "port-bellas-fashion",
+    "title": "Bella's Fashion - Boutique Women's Apparel & Runway Maxi Drops",
+    "client": "Bella's Women's Fashion",
+    "description": "High-fashion women's boutique mobile application showcasing weekly runway drops, ruched short dresses, satin slip dresses, and floral maxi gowns. Features South African sizing guides (XS to XL), live model previews, and interest-free BNPL split checkout via Payflex and PayJustNow.",
+    "portfolio_category": "Android Mobile Apps & eCommerce Showcase",
+    "media_url": "/portfolio/bellasfashion.svg",
+    "media_type": "image",
+    "media_original_name": "Bellas_Fashion_Boutique.png",
+    "media_size": 3100000,
+    "uploaded_by": "authenticated_admin",
+    "uploaded_by_email": "admin@geekforge.co.za",
+    "published": true,
+    "featured": true,
+    "display_order": 16,
+    "created_at": "2026-10-16T11:00:00Z",
+    "updated_at": "2026-10-16T12:00:00Z",
+    "platform": "Android Mobile App",
+    "year": "2026",
+    "accent_color": "#10B981",
+    "features": [
+      "Weekly Runway Collection Drops with Live Model Photography",
+      "Dress Fit Configurator: Ruched Short Dress, Satin Slip, Floral Maxi Dresses",
+      "South African Sizing Matrix (XS, S, M, L, XL) with Detailed Measurement Guide",
+      "BNPL Split Payments with Payflex & PayJustNow (3x Interest-Free Installments)",
+      "Free Delivery Across South Africa for Orders Over R999 & 7-Day Easy Returns"
+    ],
+    "metrics": [
+      {
+        "label": "Weekly Drops",
+        "value": "Runway Fresh"
+      },
+      {
+        "label": "Free Shipping",
+        "value": "Orders Over R999"
+      },
+      {
+        "label": "Returns Policy",
+        "value": "7 Days No Hassle"
+      }
+    ]
+  }
+]
